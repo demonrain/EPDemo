@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/EPDemoModel/src" modelPluginID="EPDemoModel" modelName="EPDemo"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="6.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>EPDemo.ecore</foreignModel>
+  <genPackages prefix="Epdemo" disposableProviderFactory="true" ecorePackage="EPDemo.ecore#/">
+    <genClasses ecoreClass="EPDemo.ecore#//School">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EPDemo.ecore#//School/Id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EPDemo.ecore#//School/Name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EPDemo.ecore#//School/Clazzes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EPDemo.ecore#//School/students"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EPDemo.ecore#//School/teachers"/>
+    </genClasses>
+    <genClasses ecoreClass="EPDemo.ecore#//Clazz">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EPDemo.ecore#//Clazz/Id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EPDemo.ecore#//Clazz/Name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EPDemo.ecore#//Clazz/teachers"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EPDemo.ecore#//Clazz/students"/>
+    </genClasses>
+    <genClasses ecoreClass="EPDemo.ecore#//Student">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EPDemo.ecore#//Student/Id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EPDemo.ecore#//Student/Name"/>
+    </genClasses>
+    <genClasses ecoreClass="EPDemo.ecore#//Teacher">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EPDemo.ecore#//Teacher/Id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EPDemo.ecore#//Teacher/Name"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
